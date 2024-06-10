@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    background: rgb(18, 18, 62);
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(216, 216, 251);
+    font-size: 1.02rem;
+}
+
+.hr1 {
+    border: 0;
+    background-color: lavender;
+    height: 1.2px;
+    margin: 40px 5%;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.leftSection .buttons {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.firstSection>div {
+    width: 100%;
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.myName {
+    color: rgb(147, 61, 227);
+}
+
+.secondSection {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.secondSection h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: rgb(32, 32, 68);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.box h2 {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    color: #bdbbbb;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    background-color: rgb(32, 32, 68);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #8d8b8b;
+    transition: background-color 0.3s ease;
+}
+
+.box ul li:hover {
+    background-color: rgb(64, 64, 136);
+}
+
+.box-hr {
+    border: 0;
+    background-color: lavender;
+    height: 1.2px;
+    margin: 40px 5%;
+}
+.myPortfolio{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-box-container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.p-box {
+    background-color: rgb(32, 32, 68);
+    border: 1px solid rgb(32, 32, 68);
+    border-radius: 8px;
+    padding: 20px;
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px; 
+}
+
+.p-box h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #fbf8f8;
+}
+
+.p-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.p-box p {
+    color: #fcfbfb;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #0e0e1a;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-rights {
+    color: gray;
+    font-size: 0.8rem;
+    font-size: 15px;
+}
+.footer-rights a{
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width: 768px) {
+    .firstSection {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .leftSection .buttons {
+        flex-direction: row;
+    }
+
+    .box-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        padding: 0 4rem;
+    }
+
+    .left {
+        font-size: 1.7rem;
+    }
+
+    .leftSection {
+        font-size: 3rem;
+    }
+}
