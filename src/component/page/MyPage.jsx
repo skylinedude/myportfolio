@@ -1,9 +1,9 @@
 import React from 'react';
 import './myStyle.css'
 import Typed from 'typed.js';
-import image1 from '../assets/bg-img.png'
+import image1 from '../assets/logo.png'
 import image2 from '../assets/project-1.png'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/pdf/myreume.pdf'
 
 export const MyPage = () => {
 
@@ -43,6 +43,7 @@ export const MyPage = () => {
                         <div className="buttons">
                             <a href={resume} className="btn">Download Resume</a>
                             <a href="https://github.com/skylinedude" className="btn">Visit GitHub</a>
+                            <a href="https://www.linkedin.com/in/manojm1999/" className="btn">LinkedIn</a>
                         </div>
                     </div>
                     <div className="rightSection">
